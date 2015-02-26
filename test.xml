@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project basedir="." default="integration-test" name="Integration Tests">
+    <property name="srcDir" value="."/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.5"/>
+    <property name="source" value="1.5"/>
+	<property name="TARGET_URL" value="http://something"/>
+    
+    <target name="init">
+        <mkdir dir="tests"/>
+    </target>
+    
+    <target name="integration-test" depends="init">
+    	<junit printsummary="yes" haltonfailure="yes">
+			<sysproperty key="TARGET_URL" value="${TARGET_URL}"/>
+			<classpath>
+				<fileset dir=".">  
+					<include name="**/*.jar" />  
+				</fileset>  
+			    <pathelement path="${java.class.path}"/>
+            </classpath>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="tests">
+            	<formatter type="xml"/>
+			    <zipfileset src="integration-tests.jar" includes="**/*Test.class"/>
+            </batchtest>
+		</junit>
+	</target>
+</project>
