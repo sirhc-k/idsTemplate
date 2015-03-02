@@ -10,7 +10,7 @@
         },
         "Name": "pipelineTemplate",
         "Target": {
-            "Org": "ibmdevopsu@gmail.com",
+            "Org": "ibmdevops@gmail.com",
             "Space": "dev",
             "Url": "https://api.ng.bluemix.net"
         },
