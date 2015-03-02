@@ -8,7 +8,7 @@
             },
             "Packager": "com.ibm.perfectstorm.cloudoe.packager.LiveEditDeploymentPackager"
         },
-        "Name": "pipelineTemplate",
+        "Name": "myProject",
         "Target": {
             "Org": "ibmdevops@gmail.com",
             "Space": "dev",
