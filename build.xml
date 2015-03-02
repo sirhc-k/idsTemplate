@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="." default="build" name="pipelineTemplate">
+<project basedir="." default="build" name="myProject">
     
   <property environment="env"/>
   <property name="debuglevel" value="source,lines,vars" />
@@ -8,7 +8,7 @@
   <property name="testbin" value="integration-testbin"/>
   <property name="warname" value="pipelineTemplate.war" />
   <property name="artifact_dir" value="${env.ARCHIVE_DIR}"/>
-  
+  <echo message="property values set"/>
   <path id="classpathDir">
     <pathelement location="bin" />
   </path>
