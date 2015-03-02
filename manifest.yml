@@ -3,6 +3,6 @@ applications:
 - name: myProject
   memory: 512M #The maximum memory to allocate to each application instance
   host: myProject #Hostname for app routing. Unique to domain
-  path: pipelineTemplate.war
+  path: myProject.war
   services:
-    - Cloudant NoSQL DB-uh
+    - Cloudant_myproject

@@ -6,7 +6,7 @@
   <property name="target" value="1.7" />
   <property name="source" value="1.7" />
   <property name="testbin" value="integration-testbin"/>
-  <property name="warname" value="pipelineTemplate.war" />
+  <property name="warname" value="{ant.project.name}.war" />
   <property name="artifact_dir" value="${env.ARCHIVE_DIR}"/>
 
   <path id="classpathDir">
